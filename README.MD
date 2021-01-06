@@ -1,4 +1,4 @@
-# Cofee the sharing system
+# Coffee the sharing system
 
 ## O que é?
 
@@ -23,7 +23,7 @@ tranferir facilmente arquivos via web.
 
 ~~~shell
 
-git clone https://github.com/Yuri-hallivoc/cofee-the-sharing-system
+git clone https://github.com/Yuri-hallivoc/coffee-the-sharing-system
 
 ~~~
 
@@ -32,11 +32,11 @@ através do comando
 
 ~~~shell
 
-sudo cp -r ./cofee-the-sharing-system /var/www
+sudo cp -r ./coffee-the-sharing-system /var/www
 
 ~~~
 
-3. Acesse a pasta /etc/apache2/sites-available e crie um arquivo chamado cofee-the-sharing-system.conf.
+3. Acesse a pasta /etc/apache2/sites-available e crie um arquivo chamado coffee-the-sharing-system.conf.
 
 4. Abra o arquivo criado e cole o seguinte texto e salve-o
 
@@ -46,7 +46,7 @@ sudo cp -r ./cofee-the-sharing-system /var/www
 
                ServerAdmin                    webmaster@localhost
 
-               DocumentRoot                /var/www/cofee-the-sharing-system
+               DocumentRoot                /var/www/coffee-the-sharing-system
 
 </VirtualHost>
 
