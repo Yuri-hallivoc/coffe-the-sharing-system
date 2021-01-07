@@ -42,7 +42,7 @@ sudo cp -r ./coffee-the-sharing-system /var/www
 
 ~~~
 
-<VirtualHost *: 3000>
+<VirtualHost *:3000>
 
                ServerAdmin                    webmaster@localhost
 
@@ -62,7 +62,7 @@ porta) e salve o arquivo.
 
 ~~~shell
 
-a2ensite coffe-the-sharing-system
+a2ensite coffee-the-sharing-system
 
 ~~~
 
