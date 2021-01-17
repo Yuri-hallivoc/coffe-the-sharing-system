@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/global.css?v=2">
+    <script src="./javascript/global.js?v=2"></script>
+    <title>Coffee the sharing system</title>
+</head>
+
+<body>
+    <header>
+        <h1>Coffee the sharing system</h1>
+        <br>
+    </header>
+    <nav>
+        <button onclick="altera_exibicao('upload_arquivos')">Enviar um arquivo</button>
+        <button onclick="altera_exibicao('consulta_arquivos')">
+            Consultar um arquivo
+        </button>
+    </nav>
+    <br><br><br>
+    <main>
+        <div id="upload_arquivos" class="invisivel">
+            <form action="upload_arquivos.php" method="POST" enctype="multipart/form-data">
+                <input type="file" name="arquivo">
+                <input type="submit" value="enviar" onclick="window.location.href='./tela_de_envio.html'">
+            </form>
+        </div>
+        <div id="consulta_arquivos" class="invisivel">
+            <h2>Lista de arquivos</h2>
+            <ul>
+                <a><li>Nenhum arquivo</li></a>
+            </ul>
+        </div>
+    </main>
+</body>
+
+</html>
