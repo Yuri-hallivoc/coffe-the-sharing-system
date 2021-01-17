@@ -31,12 +31,38 @@ nav button:hover{
     color: turquoise;
 }
 
+ul{
+    width: max-content;
+    max-width: 90%;
+    list-style-type: decimal;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+ul li{
+    line-height: 1.2;
+    margin-top: 1.5%;
+    background-color: lavender;
+    font-size: large;
+}
+
+ul li:hover{
+    background-color: rgb(173, 173, 241);
+}
+
 #upload_arquivos{
-    display: none;
     text-align: center;
 }
 
-#consulta_arquivos{
-    display: block;
+.invisivel{
+    display: none;
 }
 
+.visivel{
+    display: block;
+}
