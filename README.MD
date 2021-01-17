@@ -27,7 +27,15 @@ git clone https://github.com/Yuri-hallivoc/coffee-the-sharing-system
 
 ~~~
 
-2. Envie os arquivos clonados do repositório para dentro da pasta definida pelo apache como Document Roots
+2. Rode o comando a seguir para compilar o binário do sistema
+
+~~~shell
+
+gcc "~/coffee the sharing system/Linguagem C/lista_arquivos.c" -o "~/coffee the sharing system/Linguagem C/lista_arquivos"
+
+~~~
+
+3. Envie os arquivos clonados do repositório para dentro da pasta definida pelo apache como Document Roots
 através do comando
 
 ~~~shell
@@ -36,9 +44,9 @@ sudo cp -r ./coffee-the-sharing-system /var/www
 
 ~~~
 
-3. Acesse a pasta /etc/apache2/sites-available e crie um arquivo chamado coffee-the-sharing-system.conf.
+4. Acesse a pasta /etc/apache2/sites-available e crie um arquivo chamado coffee-the-sharing-system.conf.
 
-4. Abra o arquivo criado e cole o seguinte texto e salve-o
+5. Abra o arquivo criado e cole o seguinte texto e salve-o
 
 ~~~
 
@@ -54,11 +62,11 @@ sudo cp -r ./coffee-the-sharing-system /var/www
 
 **obs.:** A porta 3000 pode ser substituída por outra qualquer.
 
-5. Abra o arquivo /etc/apache2/ports.conf e localize a linha onde está escrito **Listen 80**
+6. Abra o arquivo /etc/apache2/ports.conf e localize a linha onde está escrito **Listen 80**
 e cole abaixo desta linha o texto **Listen 3000** (ou com outro número, caso escolha usar outra
 porta) e salve o arquivo.
 
-6. Usando o terminal, ative o site através do seguinte comando
+7. Usando o terminal, ative o site através do seguinte comando
 
 ~~~shell
 
@@ -66,7 +74,7 @@ a2ensite coffee-the-sharing-system
 
 ~~~
 
-7. Digite o seguinte comando no terminal para reiniciar o apache
+8. Digite o seguinte comando no terminal para reiniciar o apache
 
 ~~~shell
 
